@@ -97,7 +97,15 @@ function createSummary(content, maxLength) {
 function formatDate(dateString) {
     try {
         // Crear objeto Date desde el string
-        const date = new Date(dateString);
+        // Nota: strings en formato YYYY-MM-DD se interpretan como UTC en JS y pueden mostrar el día anterior
+        // en zonas horarias negativas. Para evitarlo, parseamos ese formato como fecha LOCAL.
+        let date;
+        if (/^\d{4}-\d{2}-\d{2}$/.test(dateString)) {
+            const [y, m, d] = dateString.split('-').map(Number);
+            date = new Date(y, m - 1, d); // fecha local (sin desfase de zona horaria)
+        } else {
+            date = new Date(dateString);
+        }
         
         // Verificar si la fecha es válida
         if (isNaN(date.getTime())) {
