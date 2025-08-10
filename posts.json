@@ -12,5 +12,12 @@
     "date": "2025-08-07",
     "image": "imagenes/data-2355696_1280.jpg",
     "content": "Un blog que funciona sin base de datos tiene muchas ventajas. Primero, es mucho más rápido de cargar porque no hay consultas a servidores externos. Segundo, es más seguro porque no hay vulnerabilidades de base de datos que explotar.\n\nTercero, es extremadamente fácil de mantener y hacer copias de seguridad. Solo necesitas copiar los archivos y ya tienes todo tu blog respaldado. Cuarto, puedes hospedarlo en cualquier servidor web básico, incluso en servicios gratuitos como GitHub Pages.\n\nFinalmente, es perfecto para blogs personales o pequeños sitios web donde no necesitas funcionalidades complejas como comentarios dinámicos o sistemas de usuarios."
+  },
+  {
+    "id": "3",
+    "title": "Cómo publicar tu blog estático en GitHub Pages (paso a paso)",
+    "date": "2025-08-10",
+    "image": "imagenes/code-5290465_1280.jpg",
+    "content": "En esta guía aprenderás a publicar tu blog estático en GitHub Pages sin necesidad de servidores ni bases de datos. Es ideal para proyectos personales y portafolios.\n\nPrimero, crea un repositorio en GitHub y sube todos los archivos de tu blog (HTML, CSS, JS, posts.json e imágenes). Luego, ve a Settings → Pages y selecciona ‘Deploy from a branch’, elige la rama ‘main’ y la carpeta raíz. GitHub generará automáticamente una URL pública para tu sitio.\n\nPara mantenerlo, cada vez que edites `posts.json` o subas nuevas imágenes, solo haz un commit y push. En minutos, los cambios estarán en producción. Si quieres usar un dominio propio, configura un registro CNAME apuntando a tu sitio y agrega el archivo CNAME en la raíz del proyecto."
   }
 ]
