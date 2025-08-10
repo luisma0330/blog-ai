@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "title": "Aprendiendo a crear un blog con IA",
+    "date": "2025-08-08",
+    "image": "imagenes/blog-684748_1280.jpg",
+    "content": "Hoy estoy practicando cómo usar inteligencia artificial para crear un blog sencillo con HTML, CSS y JavaScript. Esta técnica permite mostrar publicaciones desde un archivo JSON sin tener que modificar el HTML.\n\nLa ventaja de este enfoque es que puedes agregar tantas publicaciones como quieras simplemente editando el archivo posts.json. No necesitas conocimientos técnicos avanzados, solo seguir la estructura de los objetos JSON.\n\nAdemás, el diseño es completamente responsive, lo que significa que se ve bien tanto en computadoras de escritorio como en dispositivos móviles."
+  },
+  {
+    "id": "2",
+    "title": "Ventajas de un blog sin base de datos",
+    "date": "2025-08-07",
+    "image": "imagenes/data-2355696_1280.jpg",
+    "content": "Un blog que funciona sin base de datos tiene muchas ventajas. Primero, es mucho más rápido de cargar porque no hay consultas a servidores externos. Segundo, es más seguro porque no hay vulnerabilidades de base de datos que explotar.\n\nTercero, es extremadamente fácil de mantener y hacer copias de seguridad. Solo necesitas copiar los archivos y ya tienes todo tu blog respaldado. Cuarto, puedes hospedarlo en cualquier servidor web básico, incluso en servicios gratuitos como GitHub Pages.\n\nFinalmente, es perfecto para blogs personales o pequeños sitios web donde no necesitas funcionalidades complejas como comentarios dinámicos o sistemas de usuarios."
+  }
+]
