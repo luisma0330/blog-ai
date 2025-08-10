@@ -28,8 +28,18 @@ async function loadPosts() {
             return;
         }
         
-        // Generar HTML para todas las publicaciones
-        const postsHTML = posts.map(post => createPostCard(post)).join('');
+        // Ordenar publicaciones por fecha (más recientes primero)
+        const sortedPosts = [...posts].sort((a, b) => {
+            const da = new Date(a.date);
+            const db = new Date(b.date);
+            if (isNaN(da) && isNaN(db)) return 0;
+            if (isNaN(da)) return 1; // fechas inválidas al final
+            if (isNaN(db)) return -1;
+            return db - da; // descendente
+        });
+
+        // Generar HTML para todas las publicaciones ordenadas
+        const postsHTML = sortedPosts.map(post => createPostCard(post)).join('');
         
         // Insertar las tarjetas en el contenedor
         postsContainer.innerHTML = postsHTML;
